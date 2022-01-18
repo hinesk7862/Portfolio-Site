@@ -1,40 +1,103 @@
-.title{
-    margin-left: auto;
-    margin-right: auto;
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+}
+.tabs{
+    display: inline-flex;
+    margin-right:20px;
+}
+.tabs em{
+    font-weight: 300;
+    font-style: normal;
+}
+.tab-select{
+    text-align: right;
+}
+.intro{
     text-align: center;
-    min-height: 40vh;
+    height:70vh;
 }
-.tab-selector{
-    margin-top: 30px;
+.intro-text{
+    margin-top: 35vh;
+    font-size: 36px;
 }
-.selector-lines{
-    max-width: 50px;
-    margin-top: 10px;
-    margin-right: 20px;
-    right: 0;
+.intro-text em{
+    font-style: normal;
+    font-weight: 300;
 }
-.about-me{
-    min-height: 40vh;
+.coffee-pic{
+    height:auto;
+    max-height: 700px;
+    min-width: 570px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 560px;
 }
-.about-me-text{
-    max-width: 50%;
-    margin-right: 5vw;
-    border: 2px solid black;
+.about{
+    display: inline-flex;
 }
-.personal-picture{
-    border: 2px solid black;
+.about-text{
+    min-width: 350px;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
-.tiles{
+.about-heading{
+    margin-top: 2px;
+    font-size: 40px;
+}
+.about-body{
+    font-size: 26px;
+}
+.project-tiles{
     display: grid;
-    border: 2px black solid;
-    grid-gap: 10px 10px;
     grid-template-columns: auto auto auto;
 }
-.project-tile{
-    min-width: 200px;
-    min-height: 200px;
-    border: 2px black solid;
+.single-tile{
+    margin: 25px;
+    text-align: center;
 }
-.contact-page{
-    min-height: 40vh;
+.project-photo{
+    max-height: 425px;
+    max-width: 425px;
+    height: auto;
+    width: 90%;
+    min-width: 375px;
+    min-height: 375px;
+}
+.project-text{
+    margin-top: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width:1060px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-text{
+        min-width: none;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .coffee-pic{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .project-tiles{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:800px) {
+    .project-tiles{
+        margin-left: auto;
+        margin-right: auto;
+        width: 550px;
+        height: 550px;
+        grid-template-columns: auto;
+    }
+}
+.link-button{
+    text-decoration: none
 }
