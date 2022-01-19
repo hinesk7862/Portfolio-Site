@@ -82,7 +82,9 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .about-heading{
+        text-align: center;
+    }
 }
 @media screen and (max-width:1200px) {
     .project-tiles{
@@ -97,7 +99,40 @@
         height: 550px;
         grid-template-columns: auto;
     }
+    
 }
 .link-button{
-    text-decoration: none
+    text-decoration: none;
+    color:black;
+}
+.project-showcase-image{
+    max-width: 800px;
+    height: auto;
+    width: 60vw;
+    min-width: 500px;
+    margin-right: 40px;
+}
+.project-showcase{
+    display: flex;
+    margin-left: 52px;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+.project-showcase-text{
+    margin-left: 2vw;
+}
+@media screen and (max-width:770px) {
+    .project-showcase{
+        flex-direction: column;
+    }
+    .project-showcase{
+        justify-content: center;
+        margin: 0px;
+    }
+    .project-showcase-text{
+        margin-left: 10px;
+    }
+    .project-showcase-image{
+        margin-left: 10px;
+    }
 }
