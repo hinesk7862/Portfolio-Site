@@ -93,11 +93,11 @@
 }
 @media screen and (max-width:800px) {
     .project-tiles{
-        margin-left: auto;
-        margin-right: auto;
+        display: inline;
+        justify-content: center;
+        margin: 0px;
         width: 550px;
         height: 550px;
-        grid-template-columns: auto;
     }
     
 }
@@ -108,9 +108,9 @@
 .project-showcase-image{
     max-width: 800px;
     height: auto;
-    width: 60vw;
+    width: 40vw;
     min-width: 500px;
-    margin-right: 40px;
+    margin-right: 70px;
 }
 .project-showcase{
     display: flex;
