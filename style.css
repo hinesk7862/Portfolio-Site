@@ -107,9 +107,9 @@
 }
 .project-showcase-image{
     max-width: 800px;
-    height: auto;
     width: 40vw;
-    min-width: 500px;
+    max-height: 800px;
+    min-width: 600px;
     margin-right: 70px;
 }
 .project-showcase{
@@ -120,8 +120,9 @@
 }
 .project-showcase-text{
     margin-left: 2vw;
+    margin-right: 7vw;
 }
-@media screen and (max-width:770px) {
+@media screen and (max-width:1100px) {
     .project-showcase{
         flex-direction: column;
     }
