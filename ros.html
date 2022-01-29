@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script charset="utf-8"></script>
+    <title>Kevin Hines Portfolio</title>
+</head>
+<body>
+    <div class="tab-select">
+        <h2 class="text tabs"><a class = "link-button" href="index.html"><em>ABOUT</em></a></h2>
+        <h2 class="text tabs"><a class = "link-button" href="work.html">WORK</a></h2>
+        <!-- <h2 class="text tabs">CONTACT</h2> -->
+    </div>
+    <div class="project-showcase">
+        <img class="project-showcase-image" src="Images/ros-bot.png">
+        <div class="project-showcase-text">
+            <h3 class="text">ROS ROBOT</h3>
+            <p class="text">Before graduating from high school, we were tasked with creating a final "capstone" project for ourselves to represent our interests before our next step in life. I decided to design, manufacture, assemble, and program a robot to experiment with a program package called ROS. ROS (Robot operating system) offers a framework to build off that gives unique abilities when compared to a standard robot code-base without ROS. For example, a non-ROS based system would have a large array of files used to make instances of objects that communicate with each (with python its slightly different). With ROS, you're able to create individual nodes that each might accomplish some task.</p>
+            <p class="text">Using this, I was able to make number of nodes in python, which would otherwise be impossible without ROS, to handle more complicated components. One such example was how I made the drivebase for the robot. Instead of making one python file to handle taking in commmands and translating them to PWM pulses, I made a drivebase node that contained two motor nodes. Each node carried its own way of taking in the information it needed and "translating it" for the next node. This made it much simpler for me to program the robot without an extensive knowledge of advanced programming skills (which I don't have as I specialize in mechanical engineering).</p>
+            <p class="text">By the end of the project, I had made a robot capable of driving with human control, managing its own position relative to the environment, detecting objects with a cheap version of LIDAR, and navigating around obstacles using that object detection.</p> 
+        </div>
+    </div>
+</body>
